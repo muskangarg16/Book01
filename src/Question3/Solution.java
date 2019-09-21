@@ -51,4 +51,12 @@ class Book{
     public void setIsbn(String isbn){
         this.isbn=isbn;
     }
+    @Override
+    public String toString(){
+        StringBuilder result=new StringBuilder();
+        result.append("-----------------------------\n");
+        result.append("Book Name:\t"+getBookName()+"\nAuthor Name:\t"+getAuthorName()+"\nISBN:\t"+getIsbn()+"\n");
+        result.append("-----------------------------");
+        return result.toString();
+    }
 }
